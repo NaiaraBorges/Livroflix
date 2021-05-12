@@ -10,6 +10,7 @@
 - [HTML](https://html.com/)
 - [CSS](https://purecss.io/)
 - [JavaScript](https://www.javascript.com/)
+- [jQuery](https://owlcarousel2.github.io/OwlCarousel2/)
 
 ## :rocket: Clone
 
