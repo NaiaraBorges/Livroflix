@@ -1,0 +1,58 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .container1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-information {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .modal-btn {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .modal-bg {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+   /* .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    */
+    }
+
+@media screen and (min-width: 1000px) {
+    .description {
+        width: 50%;
+    }
+
+   /* .footer-col {
+        width: 100%;
+    */
+}
+
+
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  
+  }
+  

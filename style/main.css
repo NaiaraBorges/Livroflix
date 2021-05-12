@@ -1,0 +1,320 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Bebas Neue', cursive;
+    /*font-family: 'Arial Black', Times;  */
+    font-size: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA; 
+    transition: all 0.5s ease;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+  color: #ffffff;
+}
+
+/* main book */
+
+.main-book {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.384)100%), url('/img/main-book.jpg');
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.main-book .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button-information {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button-information:hover {
+    background-color: white;
+    color: black;
+}
+
+.button-information i {
+    margin-right: 8px;
+}
+
+.modal-btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,.50); 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.modal-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.modal-btn i {
+    margin-right: 8px;
+}
+
+.modal-bg {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 85vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(238, 231, 231, 0.89);
+    width: 60%;
+    height: 60%;
+    display: inline-block; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 100%;
+    display: inline-block;
+    float: left; 
+    width: 223px;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    flex-direction: row ;
+}
+
+.modal-bg h2 {
+    font-family: 'Alice', serif;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2rem;
+}
+
+.modal-bg h2 img {
+
+    max-width: 100%;
+    height: auto;
+    padding-left: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.modal-bg p {
+    font: bold;
+    font-family: 'Alice', serif;
+    display: inline-block;
+    box-align: left;
+    font-size: 16px;
+    line-height: 2em;
+    color: #080808;
+    line-height: 1.5;
+    width: 60%;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.modal button {
+    background-color: var(--red);
+    border: none;
+    color: rgb(231, 213, 213);
+    padding: 15px 30px;
+    margin-left: 100px; 
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.modal button:hover {
+    background-color: rgba(255, 255, 255, 0.527);
+    color: black;
+}
+
+.modal i {
+    margin-right: 8px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(226, 14, 32, 0.856);
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0%;
+    font-size: 30px;
+}
+
+.main-book .container {
+    width: 70%;
+}
+
+.box-book {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-books {
+    margin-top: 5px;
+}
+
+.carrosel-books .item {
+    cursor: pointer;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #191a1b; 
+    padding: 70px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--red);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #24262b;
+	background-color: #ffffff;
+}
