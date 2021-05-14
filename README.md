@@ -1,6 +1,7 @@
 <h3 align="center">
-    <img src="./img/mockup.png" width="1000px" />
-    <b><h1>Livroflix :books: :heart: </h1></b>  
+    <a href="https://livroflix.vercel.app/">
+        <img src="./img/mockup.png" width="1000px" />
+        <b><h1>Livroflix :books: :heart: </h1></b></a>     
 
 ## :books:	Livroflix: Sua netflix de livros.
 <p> Já imaginou uma netflix só de livros ? pois é :open_book: :heart: . </p>
