@@ -15,7 +15,7 @@
 ## :rocket: Clone
 
 ```sh
-  $ gh repo clone NaiaraBorges/Livroflix
+  $ git clone NaiaraBorges/Livroflix
 ```
 
 ## :purple_heart: :boom: screenshot
